@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+<h1>강북고 퀴즈</h1>
+<p> 1. 다음 중 강북고등학교 교목은?</p>
+<form name="form">
+    <input type="radio" name="kingName" value="v1">소나무<br>
+    <input type="radio" name="kingName" value="v2">벗꽃나무<br>
+    <input type="radio" name="kingName" value="v3">느티나무<br>
+    <input type="radio" name="kingName" value="v4">조팝나무<br>
+    <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
+</form>
+<p id="check"></p>
+<script type="text/javascript">
+    function myFucntion() {
+        if(form.kingName[2].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+        else document.getElementById("check").innerHTML="오답입니다.";
+    }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+<p> 2. 다음 중 강북고등학교 교화은?</p>
+<form name="form">
+    <input type="radio" name="kingName" value="v1">백목련<br>
+    <input type="radio" name="kingName" value="v2">개나리<br>
+    <input type="radio" name="kingName" value="v3">동백꽃<br>
+    <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
+</form>
+<p id="check"></p>
+<script type="text/javascript">
+    function myFucntion() {
+        if(form.kingName[0].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+        else document.getElementById("check").innerHTML="오답입니다.";
+    }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+<p> 3. 다음 중 강북고등학교 교과에 들어가지 않는 장소는?</p>
+<form name="form">
+    <input type="radio" name="kingName" value="v1">금호강<br>
+    <input type="radio" name="kingName" value="v2">태전동산<br>
+    <input type="radio" name="kingName" value="v3">하늘<br>
+    <input type="radio" name="kingName" value="v4">대지<br>
+    <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
+</form>
+<p id="check"></p>
+<script type="text/javascript">
+    function myFucntion() {
+        if(form.kingName[3].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+        else document.getElementById("check").innerHTML="오답입니다.";
+    }
+</script>
+</body>
+</html>
